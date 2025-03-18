@@ -17,18 +17,16 @@ public class AccountVerification extends BaseDriver {
         WebElement password = driver.findElement(By.cssSelector("input[type='password']"));
         password.sendKeys("Password123");
 
-        WebElement submit = driver.findElement(By.cssSelector("[type='submit'][class='s'][value='Giriş yap']"));
+        WebElement submit = driver.findElement(By.cssSelector("input[id='lfb'][type='submit'][class='s'][value='Giriş yap']"));
         submit.click();
 
-        WebElement shoppingCartMesaj = driver.findElement(By.cssSelector("[rel='nofollow'][href='/akakcem/']"));
+        WebElement shoppingCartMesaj = driver.findElement(By.cssSelector("[id='HM_v8']>[rel='nofollow'][href='/akakcem/'][title='Hesabım']"));
         shoppingCartMesaj.click();
 
         WebElement profilismi = driver.findElement(By.cssSelector("[rel='nofollow'][href='/akakcem/']"));
         Assert.assertTrue("Profil ", profilismi.getText().contains("TestUser"));
 
         tearDown();
-
         }
-
     }
 
