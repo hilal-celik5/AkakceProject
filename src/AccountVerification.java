@@ -26,8 +26,9 @@ public class AccountVerification extends BaseDriver {
         WebElement profilismi = driver.findElement(By.cssSelector("[rel='nofollow'][href='/akakcem/']"));
         Assert.assertTrue("Profil ", profilismi.getText().contains("TestUser"));
 
-        Wait(3);
-        driver.quit();
+        tearDown();
+
+        }
 
     }
-}
+
