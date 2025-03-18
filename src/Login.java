@@ -10,7 +10,6 @@ import org.openqa.selenium.support.ui.Wait;
 
 public class Login extends BaseDriver {
 
-    private Assertions Assert;
 
     @Test
     public void Test1() {
