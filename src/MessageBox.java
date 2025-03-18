@@ -4,10 +4,11 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-
 public class MessageBox extends BaseDriver {
+
     @Test
     public void MessageBoxCheck() throws InterruptedException {
+
         driver.get("https://www.akakce.com/");
 
         WebElement butonLogin = driver.findElement(By.cssSelector("[id='H_rl_v8']>a+a"));
@@ -25,24 +26,13 @@ public class MessageBox extends BaseDriver {
         WebElement buttonAccount = driver.findElement(By.cssSelector("[id='HM_v8']>i>a"));
         buttonAccount.click();
 
-
-//         WebElement hesabımbtn = driver.findElement(By.cssSelector("[id='HM_p_v8']+li+li+li+li"));
-//         hesabımbtn.click();
-
-
         WebElement buttonMessage = driver.findElement(By.cssSelector("a[href='/akakcem/mesajlarim/']"));
         buttonMessage.click();
+
         WebElement txtMessage = driver.findElement(By.cssSelector("[class='wbb_v8']>p"));
 
-
-        WebElement element = driver.findElement(By.cssSelector("[class='wbb_v8']"));
-        element.getAttribute("class");
-
-        System.out.println(txtMessage.getText().equals("Listelenecek mesaj bulunamadı."));
         Assert.assertTrue(txtMessage.getText().contains("Listelenecek mesaj bulunamadı."));
 
-          tearDown();
-
-
+        tearDown();
     }
 }
