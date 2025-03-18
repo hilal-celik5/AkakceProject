@@ -9,8 +9,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Wait;
 
 public class Login extends BaseDriver {
-
-
     @Test
     public void Test1() {
 
@@ -25,8 +23,11 @@ public class Login extends BaseDriver {
         WebElement submit = driver.findElement(By.id("lfb"));
         submit.click();
 
+        WebElement element= driver.findElement(By.cssSelector("[id='HM_v8']>i>a"));
+
+        Assertions.assertTrue(element.getText().equals("TestUser"));
+        System.out.println("merhaba");
+
         tearDown();
-
-
     }
 }
