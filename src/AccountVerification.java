@@ -9,7 +9,10 @@ import static Utility.MyFunc.Wait;
 public class AccountVerification extends BaseDriver {
     @Test//main yerine
     public void Test1() {
-        driver.get("https://www.akakce.com/akakcem/giris/");
+        driver.get("https://www.akakce.com/");
+
+        WebElement girişyap = driver.findElement(By.cssSelector("[href='/akakcem/giris/'][rel='nofollow']"));
+        girişyap.click();
 
         WebElement email = driver.findElement(By.cssSelector("input[id='life']"));
         email.sendKeys("vokiwec222@dmener.com");
