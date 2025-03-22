@@ -4,6 +4,7 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 public class AccountCreation extends BaseDriver {
+
     @Test
     public void Test1Pozitif() {
         driver.get("https://www.akakce.com/");
@@ -54,10 +55,11 @@ public class AccountCreation extends BaseDriver {
         submit.click();
 
         WebElement verify = driver.findElement(By.cssSelector("div[id='HM_v8']>i>a"));
-        Assert.assertTrue("Aranan hesap bulunamadı", verify.getText().contains("TestUser"));
+        Assert.assertTrue("Hesap oluşturulamadı", verify.getText().contains("TestUser"));
 
         tearDown();
     }
+
     @Test
     public void Test2Negative() {
         driver.get("https://www.akakce.com/");
