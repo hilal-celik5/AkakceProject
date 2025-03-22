@@ -2,7 +2,6 @@ package Utility;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
 import java.time.Duration;
 
 public class BaseDriver {
@@ -20,4 +19,3 @@ public class BaseDriver {
         driver.quit();
     }
 }
-// Bu class ta hiçbir değişiklik yapılmayacaktır!!!
