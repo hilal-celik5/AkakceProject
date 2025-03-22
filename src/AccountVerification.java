@@ -4,15 +4,14 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-import static Utility.MyFunc.Wait;
-
 public class AccountVerification extends BaseDriver {
-    @Test//main yerine
+
+    @Test
     public void Test1() {
         driver.get("https://www.akakce.com/");
 
-        WebElement girişyap = driver.findElement(By.cssSelector("[href='/akakcem/giris/'][rel='nofollow']"));
-        girişyap.click();
+        WebElement girisyap = driver.findElement(By.cssSelector("[href='/akakcem/giris/'][rel='nofollow']"));
+        girisyap.click();
 
         WebElement email = driver.findElement(By.cssSelector("input[id='life']"));
         email.sendKeys("vokiwec222@dmener.com");
@@ -30,6 +29,6 @@ public class AccountVerification extends BaseDriver {
         Assert.assertTrue("Profil ", profilismi.getText().contains("TestUser"));
 
         tearDown();
-        }
     }
+}
 
