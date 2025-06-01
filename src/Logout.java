@@ -28,5 +28,6 @@ public class Logout extends BaseDriver {
         exit.click();
 
         tearDown();
+        tearDown();
     }
 }
