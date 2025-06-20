@@ -2,7 +2,9 @@
 
 ## 📌 Project Description
 
-This project focuses on the **user account management module** of Akakce.com. It includes core functionalities such as account creation, login, logout, order tracking, message box access, and account deletion. The goal is to provide a secure and personalized shopping experience for users.
+This project focuses on the **user account management module** of Akakce.com. It includes core functionalities such as
+account creation, login, logout, order tracking, message box access, and account deletion. The goal is to provide a
+secure and personalized shopping experience for users.
 
 --- 
 
@@ -54,18 +56,34 @@ This project focuses on the **user account management module** of Akakce.com. It
 
 ---
 
+## User Stories & Contributors
+
+| Contributor                                          | Role                                  | User Stories |
+|------------------------------------------------------|---------------------------------------|--------------|
+| [Hilal ÇELİK](https://github.com/hilal-celik5)       | Project Lead & QA Automation Engineer | US-105       |
+| [Mert GÖÇMEN](https://github.com/Mert-Gocmen)        | QA Automation Engineer                | US-101       |
+| [Mustafa İNAN](https://github.com/Mustafainan11)     | QA Automation Engineer                | US-102       |
+| [Görkem KEZER](https://github.com/Gorkem-Kezer)      | QA Automation Engineer                | US-103       |
+| [Rukiye BAKACHAN](https://github.com/RUKIYEE88)      | QA Automation Engineer                | US-104       |
+| [Telman BAYRAMOV](https://github.com/TELMAN-CREATOR) | QA Automation Engineer                | US-106       |
+| [Yiğithan DÜZGÜN](https://github.com/yigithanduzgun) | QA Automation Engineer                | US-107       |
+
+---
+
 ## ✅ Testing Prerequisites
 
 - A supported browser (Chrome, Firefox, Safari) must be installed and running.
 - Internet access is required in the test environment.
 - Passwords must meet the following criteria:
-    - Minimum 8 characters
-    - At least one uppercase letter
-    - At least one lowercase letter
-    - At least one number
+  - Minimum 8 characters
+  - At least one uppercase letter
+  - At least one lowercase letter
+  - At least one number
 - For login, message checking, and account deletion: a verified account must already exist.
 
 ---
+
+
 
 ## 📄 License
 
