@@ -26,7 +26,6 @@ public class Logout extends BaseDriver {
 
         WebElement exit = driver.findElement(By.cssSelector("[href='#Çık']"));
         exit.click();
-
         tearDown();
     }
 }
